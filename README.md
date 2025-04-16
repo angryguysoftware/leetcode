@@ -11,3 +11,14 @@
 Complexity: **O(n)**, where ’n’ is the length of the input string.
 
 Space Complexity: **O(1)**, because fixed dictionary is used to map Roman numerals to their corresponding integer values, constant amount of additional memory for variables.
+
+
+[1. Two Sum](https://leetcode.com/problems/two-sum/description/)
+
+| Run      | Time  | Memory   |
+| -------- | ----- | -------- |
+| v1 *GO*  | 59ms  | 5.38 MB  |
+| v2 *GO*  | 60ms  | 5.50 MB  |
+
+> [!CAUTION]
+> Using `range` rathere than `for` loop is slower
