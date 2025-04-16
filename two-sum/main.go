@@ -3,7 +3,23 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(twoSumV2([]int{2, 7, 11, 15}, 9))
+	fmt.Println(twoSumV3([]int{2, 7, 11, 15}, 9))
+}
+
+func twoSumV3(nums []int, target int) []int {
+	m := map[int]int{}
+	for i := 0; i < len(nums); i++ {
+		m[nums[i]] = i
+	}
+	for i := 0; i < len(nums); i++ {
+		d := target - nums[i]
+		if _, ok := m[d]; ok {
+			if m[d] != i {
+				return []int{i, m[d]}
+			}
+		}
+	}
+	return []int{}
 }
 
 func twoSumV2(nums []int, target int) []int {
