@@ -19,6 +19,7 @@ Space Complexity: **O(1)**, because fixed dictionary is used to map Roman numera
 | -------- | ----- | -------- |
 | v1 *GO*  | 59ms  | 5.38 MB  |
 | v2 *GO*  | 60ms  | 5.50 MB  |
+| v3 *GO*  | 5ms   | 7.18 MB  |
 
 > [!CAUTION]
 > Using `range` rathere than `for` loop is slower
